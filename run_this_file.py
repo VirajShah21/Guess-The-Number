@@ -13,12 +13,18 @@ guess = None
 
 while True:
     answer = dice.dice()
+    tries = 0
     while guess != answer:
         guess = input('What number am I thinking of: ')
         if guess == 'q':
             print('Bye!')
             exit()
+        tries += 1
         correct = compare.stuff(int(guess),answer)
 
         if correct:
+            break
+
+        if tries == 10:
+            print('Sorry, your 10 tries are up. The number was %s. Lets play again.' % answer)
             break
