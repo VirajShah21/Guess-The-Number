@@ -18,4 +18,6 @@ while True:
         if guess == 'q':
             print 'Bye!'
             exit()
-        compare.stuff(guess,answer)
+        correct = compare.stuff(guess,answer)
+        if correct:
+            break
