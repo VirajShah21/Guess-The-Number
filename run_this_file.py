@@ -1,4 +1,5 @@
-import dice ; import compare
+import dice
+import compare
 
 print 'Instructions:'
 print 'You have 10 tries to guess what the number I am thinking of is'
