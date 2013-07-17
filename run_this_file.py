@@ -9,12 +9,11 @@ print()
 print()
 
 
-guess = None
-
 while True:
-    # initialize answer and try counter
+    # initialize answer, try counter, and guess
     answer = dice.dice()
     tries = 0
+    guess = None
     while guess != answer:
         guess = input('What number am I thinking of: ')
 
