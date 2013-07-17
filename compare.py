@@ -1,3 +1,6 @@
+# Compares guess and answer and prints out the correct response.
+# returns True if the guess is correct, and False if the guess is wrong.
+
 def stuff(guess,answer):
     if guess > answer:
         print 'Too high, go for a lower guess'
