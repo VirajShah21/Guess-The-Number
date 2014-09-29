@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Guess The Number</title>
+    <script src="src/gtn.js"></script>
+    <link>
+</head>
+
+<body>
+    <div id="container">
+	<form action="javascript:gtn.check()">
+	    <input type="text" id="guess"/>
+	    <input type="submit" value="Check">
+	    <button onClick="gtn.start()"></button>
+	</form>
+
+	<div id="guesses">
+	    Your Guesses:
+	</div>
+    </div>
+</body>
+</html>
